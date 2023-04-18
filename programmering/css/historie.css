@@ -1,0 +1,273 @@
+/*
+overskrift: font-family: "myriad-pro", sans-serif;
+tekst: font-family: 'Zilla Slab', serif;
+
+Farver:
+#071433
+#a8311a
+#df5a0f , rgb(223,90,15)
+#f1c142
+#f7f1e7
+*/
+
+#historie::after {
+    width: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+p {
+    font-size: 27px;
+    line-height: 1.8em;
+    letter-spacing: 2px;
+}
+
+/*=================SNAP SCROLL SET UP=================*/
+
+#container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+/*=================HISTORIEN=================*/
+
+h1 {
+    color: #f7f1e7;
+}
+
+h2 {
+    padding-top: 1em;
+}
+
+#intro {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#intro-linnea {
+    width: 570px;
+    padding-bottom: 130px;
+}
+
+.wrap  {
+    padding-bottom: 250px;
+    padding-left: 80px;
+}
+
+video {
+    height: 90%;
+}
+
+.breyd {
+    width: 70%;
+    padding-top: 0.5em;
+    z-index: 1;
+}
+
+#rykke1 {
+    width: 45%;
+    padding-left: 11em;
+}
+
+#rykke2 {
+    width: 45%;
+    padding-left: 10em;
+}
+
+#rykke3 {
+    width: 50%;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+}
+
+#btn {
+    border: 2px solid #f7f1e7;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+}
+
+#btn:hover {
+    background-color: #f7f1e7;
+    color: #071433;
+}
+
+/*=================ILLUSTRATION POSITION=================*/
+
+#boble {
+    position: absolute;
+    transform: rotate(25deg);
+    top: 10px;
+    left: 40px;
+    width: 600px;
+}
+
+#bered {
+    position: absolute;
+    width: 150px;
+    transform: rotate(10deg);
+    top: 50px;
+    right: 50px;
+}
+
+#student {
+    position: absolute;
+    transform: rotate(-10deg);
+    width: 300px;
+    bottom: 150px;
+    right: 250px;
+}
+
+#skii {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    bottom: 100px;
+}
+
+#mail {
+    position: absolute;
+    width: 200px;
+    transform: rotate(-20deg);
+    top: 30px;
+    left: 20px;
+}
+
+#brandbil {
+    position: absolute;
+    width: 500px;
+    bottom: 120px;
+    left: 40px;
+}
+
+#tandlæge {
+    position: absolute;
+    width: 180px;
+    transform: rotate(10deg);
+    bottom: 250px;
+    right: 50px;
+}
+
+#plaster-o {
+    position: absolute;
+    width: 150px;
+    top: 20px;
+    left: 50px;
+}
+
+#plaster-r {
+    position: absolute;
+    width: 150px;
+    transform: rotate(55deg);
+    top: 0;
+    right: 180px;
+}
+
+#saks {
+    position: absolute;
+    width: 250px;
+    transform: rotate(90deg);
+    top: 50px;
+    right: 20px;
+}
+
+#firstaid {
+    position: absolute;
+    width: 180px;
+    transform: rotate(-10deg);
+    bottom: 150px;
+    left: 25px;
+}
+
+#bind {
+    position: absolute;
+    width: 400px;
+    bottom: 150px;
+    right: 100px;
+}
+
+#sol {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    right: 50px;
+}
+
+#kop {
+    position: absolute;
+    width: 200px;
+    transform: rotate(-10deg);
+    bottom: 150px;
+    left: 30px;
+}
+
+#tavle {
+    position: absolute;
+    width: 300px;
+    bottom: 90px;
+    right: 150px;
+}
+
+#hjelm {
+    position: absolute;
+    width: 180px;
+    transform: rotate(-15deg);
+    top: 10px;
+    left: 30px;
+}
+
+#slange {
+    position: absolute;
+    width: 400px;
+    bottom: 100px;
+    right: 0;
+}
+
+#brand {
+    position: absolute;
+    width: 600px;
+    bottom: 60px;
+    left: 0;
+}
+
+#tlf {
+    position: absolute;
+    width: 200px;
+    bottom: 300px;
+    right: 0;
+}
+
+#linnea {
+    position: absolute;
+    width: 450px;
+    bottom: 50px;
+    left: 10px;
+}
+#hjælp {
+    position: absolute;
+    width: 500px;
+    transform: rotate(-10deg);
+    bottom: 100px;
+    right: 0;
+}

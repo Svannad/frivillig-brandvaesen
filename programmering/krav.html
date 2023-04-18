@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frivilligt Brandvæsen</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/cgu8wak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fælles.css">
+    <link rel="stylesheet" href="./css/krav.css">
+</head>
+<body>
+<!--Page Loader-->
+    <div id="preloader"></div>
+
+<!--Header med menupunkter-->
+    <header>
+        <figure>
+            <a href="./index.html"><img src="./img/logo.png" alt="frivilligt brandvæsen logo"></a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="./historie.html" id="historie">Linneas historie</a></li>
+                <li><a href="./brandvaesen.html" id="brandvæsen">Frivilligt brandvæsen</a></li>
+                <li><a href="./krav.html" id="krav">Krav</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<!--Main Content-->
+        <section id="infografik" class="hidden">
+            <h1><span>krav til</span> <br> frivillig brandmand</h1>
+            <img src="./img/infografik.png" alt="infografik om frivillig brandmand" id="info">
+        </section>
+        <section id="mere-om-krav" class="hidden">
+            <h2>Mere om kravene</h2>
+            <p>
+                Før du kan blive uddannet til brandmand, er der nogle krav du først skal opfylde. <br> 
+                Disse krav er:
+            </p>
+            <ul>
+                <li>Hav en ren straffeattest.</li>
+                <li>Kunne tale og forstå dansk. Om du er ordblind eller har andre sproglige udfordringer
+                    er ikke afgørende, for vi råder over forskellige hjælpemidler i forhold til
+                    uddannelsen. Det vigtigste er, at du har viljen til at blive brandmand.</li>
+                <li>Være fyldt 18 år - og max. Ca. 50 år, afhængig af fysisk form og øvrige kompetencer.</li>
+                <li>Være i fornuftig fysisk form. De fleste stationer stiller en række fysiske krav, som
+                    fx. at du skal kunne løbe en bestemt strækning, kunne løfte/slæbe en bestemt vægt over
+                    en vis strækning og så videre. Disse krav er individuelle fra station til station.</li>
+                <li>Ikke have højdeskræk, klaustrofobi, skræk for mørke rum etc.</li>
+                <li>Ikke lide fysiske skavanker som fx dårlig ryg, knæ eller hofter. Arbejdet som
+                    brandmand kræver både styrke i ryggen, stærke muskler og god udholdenhed.</li>
+                <li>Være mentalt stærk. Hermed menes, at du skal kunne tåle at se blod og det, der er
+                    værre. Du ved aldrig helt, hvad du kommer ud til - især ved trafikuheld og forskellige
+                    redningsindsatser. Derfor er det vigtigt, at du er i en psykisk balance og ikke er
+                    sart.</li>
+                <li>Have accept af din arbejdsgiver, uddannelsesinstitution og lignende om, at du kan stå
+                    100% til rådighed, når du har vagt.</li>
+            </ul>
+        </section>
+        <section id="uddannet" class="hidden">
+            <h2>Sådan bliver du uddannet</h2>
+            <ul>
+                <li>Først må du blive ansat på en brandstation: du bliver tilbudt en brandmandsuddannelse
+                    fra din brandstation, så du skal altså først sende en ansøgning og blive ansat</li>
+                <li>Grunduddannelsen: Den bliver også kaldt Indsatsuddannelsen og er tilrettelagt som en
+                    blanding af aften- og weekenduddannelser med et modul pr. uge. Det samlede omfang er
+                    74 timer. Du bliver ofte uddannet på den lokale brandstation.</li>
+                <li>Funktionsuddannelsen: Denne uddannelse kommer efter grunduddannelsen. Denne del
+                    gennemføres som regel over fire hverdags uger eller otte weekender, det samlede omfang
+                    er 148 timer. Her lærer du førstehjælp, røgdykning, eftersøgning, frigørelse fra biler
+                    og alle de funktioner, du skal kunne som fuldt befaren brandmand.</li>
+            </ul>
+        </section>
+    </main>
+    <script src="./js/fade.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+    </script>
+</body>
+</html>

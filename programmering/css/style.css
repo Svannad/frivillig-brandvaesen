@@ -1,0 +1,119 @@
+/*
+overskrift: font-family: "myriad-pro", sans-serif;
+tekst: font-family: 'Zilla Slab', serif;
+
+Farver:
+#071433 , rgb(7,20,51)
+#a8311a
+#df5a0f , rgb(223,90,15)
+#f1c142
+#f8f4ed
+*/
+
+header {
+    display: none;
+}
+
+/*=======Intro Video==================================*/
+
+#video {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #f8f4ed;
+    border-right: 1px solid #f8f4ed;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+video {
+    width: 100%;
+}
+
+/*=======Forside==================================*/
+
+#valg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.valg-kort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+    border: 3px solid #df5a0f;
+    margin: 0 30px;
+    position: relative;
+    background-color: rgb(223,90,15,0.15);
+    transition: 0.5s;
+}
+
+.valg-kort h3 {
+    font-family: "myriad-pro", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.valg-kort img {
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.valg-kort:hover {
+    height: 400px;
+}
+
+.valg-kort:hover .mynd {
+    opacity: 1;
+}
+
+.valg-kort:hover .valget {
+    margin-top: 250px;
+}

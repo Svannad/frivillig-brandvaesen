@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frivilligt Brandvæsen</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/cgu8wak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fælles.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!--Page Loader-->
+    <div id="preloader"></div>
+
+<!--Header med menupunkter-->
+    <header id="mainHeader">
+        <figure>
+            <a href="./index.html"><img src="./img/logo.png" alt="frivilligt brandvæsen logo"></a>
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="./historie.html">Linneas historie</a></li>
+                <li><a href="./brandvaesen.html">Frivilligt brandvæsen</a></li>
+                <li><a href="./krav.html">Krav</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+<!--Intro video-->
+        <section id="video">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <video id="introVid" src="./img/intro-video.mp4" autoplay></video>
+        </section>
+
+<!--Main content på forsiden-->
+        <section id="valg">
+            <a href="./historie.html">
+            <div class="valg-kort">
+                <img src="./img/linnea.jpeg" alt="Linnea" class="mynd">
+                <h3 class="valget">Læs Linneas <br> Historie</h3>
+            </div>
+            </a>
+            <a href="./krav.html">
+            <div class="valg-kort">
+                <img src="./img/frivillig1.JPG" alt="Linnea" class="mynd">
+                <h3 class="valget">Hvordan Bliver <br> Jeg Frivillig</h3>
+            </div>
+            </a>
+            <a href="./brandvaesen.html">
+            <div class="valg-kort">
+                <img src="./img/brandbil.jpg" alt="Linnea" class="mynd">
+                <h3 class="valget">Frivilligt <br> Brandvæsen</h3>
+            </div>
+            </a>
+        </section>
+    </main>
+<script src="./js/script.js"></script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+</script>
+</body>
+</html>

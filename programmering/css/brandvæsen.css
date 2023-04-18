@@ -1,0 +1,76 @@
+/*
+overskrift: font-family: "myriad-pro", sans-serif;
+tekst: font-family: 'Zilla Slab', serif;
+
+Farver:
+#071433
+#a8311a
+#df5a0f , rgb(223,90,15)
+#f1c142
+#f7f1e7
+*/
+
+#brandvæsen::after {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#kerneopgave
+{
+    display: flex;
+    flex-direction: column; 
+    width: 85%;  
+    text-align: left;
+    background-color: #0e1e44;
+    margin: 5%;
+    padding: 2%;
+    gap: 2em;
+}
+
+#rundvisning
+{
+    display: flex;
+    flex-direction: column; 
+    width: 85%;  
+    text-align: left;
+    background-color: #0e1e44;
+    margin: 5%;
+    padding: 2%;
+    gap: 2em;
+}
+
+p
+{
+   font-weight: bolder;
+   font-size: 20px;
+   line-height: 150%;
+   letter-spacing: 1px;
+}
+
+ol
+{
+    text-align: left;
+    line-height: 200%;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+
+li {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+#tekst
+{
+    font-weight: lighter;
+}
+
+iframe {
+    height: 500px;
+    width: 100%;
+    border: none;
+}
