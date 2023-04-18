@@ -17,25 +17,3 @@ window.addEventListener('scroll' , function(){
   let value = 1 + window.scrollY/-600;
   video.style.opacity = value;
 })
-
-// Start og stop video
-let options = {
-    root: null,
-    rootMargin:'0px', 
-    treshold:1.0
-};
-
-let callback = (entries, observer)=>{
-    entries.forEach(entry => {
-      if(entry.target.id == 'introVid') {
-        if(entry.isIntersecting) {
-          entry.target.play();
-        }
-        else {
-          entry.target.pause();
-        }
-      }
-    })
-}
-let observer = new IntersectionObserver(callback, options);
-observer.observe(document.querySelector('#introVid'))
